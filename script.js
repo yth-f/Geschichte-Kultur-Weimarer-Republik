@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 function search(item) {
     if(event.key === 'Enter') {
-        let solution = item.lastElementChild.innerText.toLowerCase();
-        if(item.firstElementChild.value.toLowerCase() == solution) {
+        let solution = item.lastElementChild.innerText;
+        if(item.firstElementChild.value.toLowerCase() == solution.toLowerCase()) {
 
           const newContent = document.createTextNode(solution);
           item.parentNode.appendChild(newContent);
